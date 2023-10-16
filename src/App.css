@@ -42,6 +42,13 @@ body {
     display: flex;
     justify-content: space-between;
   }
+/* App.css или ваш CSS-файл */
+.rounded {
+  border-radius: 10px; 
+  overflow: hidden; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
   
 
   

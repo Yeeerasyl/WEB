@@ -1,36 +1,37 @@
 import React  from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faUserFriends, faEnvelope, faImage, faMusic, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faUserFriends, faEnvelope, faImage,  faVideo, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import './SideBar.css'
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 function SideBar(){
     return(
 
         <React.Fragment>
             <div className="sidebar">
         <ul>
-          <li>
+        <li>
             <FontAwesomeIcon icon={faUser} />
-            <a href="#">Моя страница</a>
+            <Link to='myprofile'>My Profile</Link>
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faNewspaper} />
+            <Link to='newspaper'>Newspaper</Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faUserFriends} />
-            <a href="#">Друзья</a>
+            <Link to='friends'>Friends</Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faEnvelope} />
-            <a href="#">Сообщения</a>
+            <Link to='messages'>Message</Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faImage} />
-            <a href="#">Фотографии</a>
+            <Link to='photos'>Photos</Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faVideo} />
-            <a href="#">Видео</a>
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faMusic} />
-            <a href="#">Музыка</a>
+            <Link to='video'>Video</Link>
           </li>
           
         </ul>
