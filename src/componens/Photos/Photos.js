@@ -8,7 +8,6 @@ class Photos extends React.Component {
           <h2>Мои фотографии</h2>
           <button className="add-photo-button">Добавить фотографию</button>
         </div>
-        {/* Здесь вы можете вставить отображение фотографий */}
       </div>
     );
   }

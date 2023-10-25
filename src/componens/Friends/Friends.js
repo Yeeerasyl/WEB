@@ -37,7 +37,7 @@ class Friends extends React.Component {
         <div className="friend-list">
           {filteredFriends.map((friend) => (
             <div key={friend.id} className="friend">
-              <img src={friend.imageUrl} alt={`${friend.name} ${friend.surname}`} />
+              <img src="https://avatars.mds.yandex.net/i?id=0e9567d0e99c7a85cc62f0fc1d3c565708d9ebea-10595433-images-thumbs&n=13" alt={`${friend.name} ${friend.surname}`} />
               <div>
                 <p>{friend.name}</p>
                 <p>{friend.surname}</p>
