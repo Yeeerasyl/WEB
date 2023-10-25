@@ -1,10 +1,8 @@
 import React from 'react';
 import './LoginPage.css';
-import {Link} from 'react-router-dom' 
 export const LoginPage=()=>{
     return(
-        <React.Fragment>
-            <form className='LoginForm'>
+        <form className='LoginForm'>
             <h1>
                 Войти
             </h1>
@@ -16,11 +14,11 @@ export const LoginPage=()=>{
             </div>
             <div>
                 <button>
-                    <Link to='/home' style={{ color: '#ffffff' }}>Войти</Link>
+                    Войти
                 </button>
             </div>
-        </form>
-        </React.Fragment>
+            </form>
+       
     )
 }
 export default LoginPage;
